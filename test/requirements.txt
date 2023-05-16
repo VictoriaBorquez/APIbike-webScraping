@@ -1,3 +1,5 @@
 selenium
 webdriver-manager
 psycopg2
+requests
+urllib3==1.25.11

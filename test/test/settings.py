@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bike',
     'snifa',
 ]
 
@@ -77,8 +78,8 @@ WSGI_APPLICATION = 'test.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db_snifa',
-        'USER': 'snifa_user',
+        'NAME': 'db_test',
+        'USER': 'user_test',
         'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '5432',

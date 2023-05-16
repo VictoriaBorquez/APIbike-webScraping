@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Variables de configuración
-DB_NAME="db_snifa"
-DB_USER="snifa_user"
+DB_NAME="db_test"
+DB_USER="user_test"
 DB_PASSWORD="password"
 
 # Comando para crear la base de datos
