@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNIFA</title>
+</head>
+<body>
+    {% block contenido  %}
+    <!-- Bootstrap CSS v5.0.2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="card">
+    <div class="card-body">
+        <h5 class= "card-title">Procedimientos Sancionatorios SNIFA</h5>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Expediente</th>
+                    <th>Unidad Fiscalizable</th>
+                    <th>Nombre o Razón Social</th>
+                    <th>Categoría</th>
+                    <th>Región</th>
+                    <th>Estado</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for s in result %}
+                <tr>
+                    <td>{{s.proceedings}}</td>
+                    <td><a href="{{s.url_auditable_unit}}" target="_blank">{{s.auditable_unit}}</a></td>
+                    <td>{{s.name_social_reason}}</td>
+                    <td>{{s.category}}</td>
+                    <td>{{s.region}}</td>
+                    <td>{{s.status}}</td>
+                    <td><a href="{{s.detail}}" target="_blank">+ Ver detalles</a> </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock  %}
+
+</body>
+</html>
