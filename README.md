@@ -56,6 +56,17 @@ Proyecto creado en el framework **Django**, que realiza un web scraping a travé
   python manage.py runserver
   ```
   Abrir navegador: 
-  
-  http://127.0.0.1:8000/
+  - Ruta admin:
+    http://127.0.0.1:8000/admin
+    
+  - Rutas API Bike:
+    Muestra tabla con datos estaciones.
+    http://127.0.0.1:8000/bike
+    
+  - Rutas SNIFA
+    1) JSON con datos de página snifa
+    http://127.0.0.1:8000/snifa/data
+    2) Tabla con datos de página snifa.
+    http://127.0.0.1:8000/snifa
+    
 
