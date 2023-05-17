@@ -57,16 +57,22 @@ Proyecto creado en el framework **Django**, que realiza un web scraping a travé
   ```
   Abrir navegador: 
   - Ruta admin:
-    http://127.0.0.1:8000/admin
+    http://127.0.0.1:8000/admin/
+    
+    Credenciales:
+    
+      usuario: admin
+
+      password: admin
     
   - Rutas API Bike:
     Muestra tabla con datos estaciones.
-    http://127.0.0.1:8000/bike
+    http://127.0.0.1:8000/bike/
     
   - Rutas SNIFA
     1) JSON con datos de página snifa
     http://127.0.0.1:8000/snifa/data
     2) Tabla con datos de página snifa.
-    http://127.0.0.1:8000/snifa
+    http://127.0.0.1:8000/snifa/
     
 
