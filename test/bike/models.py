@@ -9,7 +9,7 @@ class Location(models.Model):
 
 class Extra(models.Model):
     address = models.CharField(max_length=200)
-    altitude = models.IntegerField(null=True)
+    altitude = models.IntegerField()
     ebikes = models.IntegerField()
     has_ebikes = models.BooleanField()
     last_updated = models.IntegerField()
